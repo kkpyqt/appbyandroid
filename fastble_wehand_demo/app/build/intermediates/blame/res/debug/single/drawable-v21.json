@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/fdcafd6f80f9412f0389465eeaa44a37/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

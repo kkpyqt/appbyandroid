@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.healthmanage.measure.mapper.HmUserSetRelMapper">
+
+
+    <select id="queryBySetMacAdd"    resultType="org.jeecg.modules.healthmanage.measure.entity.HmUserSetRel">
+        select * from hm_user_set_rel   where  upper(set_macadd) = upper(#{set_macadd,jdbcType=VARCHAR})  order by create_time asc limit 1
+
+    </select>
+
+    <select id="queryBySetImei"    resultType="org.jeecg.modules.healthmanage.measure.entity.HmUserSetRel">
+        select * from hm_user_set_rel   where  upper(set_IMEI) = upper(#{set_imei,jdbcType=VARCHAR})  order by create_time asc limit 1
+
+    </select>
+    <select id="queryBySetIccid"    resultType="org.jeecg.modules.healthmanage.measure.entity.HmUserSetRel">
+        select * from hm_user_set_rel   where  upper(icc_id) = upper(#{set_imei,jdbcType=VARCHAR})  order by create_time asc limit 1
+
+    </select>
+</mapper>

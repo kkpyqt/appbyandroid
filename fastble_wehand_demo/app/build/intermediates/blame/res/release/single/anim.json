@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/rotate.xml",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/anim/rotate.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_tooltip_exit.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_tooltip_enter.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/anim/abc_slide_out_top.xml"
+    }
+]

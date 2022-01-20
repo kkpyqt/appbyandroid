@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_scan.png",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/mipmap-xxhdpi/ic_scan.png"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_blue_remote.png",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/mipmap-xxhdpi/ic_blue_remote.png"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_enter.png",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/mipmap-xxhdpi/ic_enter.png"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_rssi.png",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/mipmap-xxhdpi/ic_rssi.png"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_loading.png",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/mipmap-xxhdpi/ic_loading.png"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_blue_connected.png",
+        "source": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/src/main/res/mipmap-xxhdpi/ic_blue_connected.png"
+    }
+]

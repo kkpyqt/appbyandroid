@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".com.wehand.demo.sugaroperation.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/measure_bg_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+
+
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/bg_ble_sugar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="12sp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8sp">
+
+
+                <FrameLayout
+                    android:layout_width="320sp"
+                    android:layout_height="320sp"
+                    android:layout_gravity="center"
+                    android:padding="12sp">
+
+
+                    <ImageView
+                        android:id="@+id/measure_bg_img"
+
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="match_parent"
+
+
+                        android:layout_gravity="fill|center_horizontal|center_vertical"
+
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/btsearch"
+                        android:visibility="visible" />
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

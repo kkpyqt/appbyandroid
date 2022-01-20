@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.healthmanage.measure.mapper.HmMeasureInfoMapper">
+
+<!--    单日测试总次数-->
+    <select id="queryCurrentAmount"    resultType="long">
+      select count(1)
+ from (
+ select  distinct user_id,user_rel_id,device_type,create_time
+      from hm_measure_info where
+     user_id =#{loginUser_id,jdbcType=VARCHAR}
+  and user_rel_id =#{userSetId,jdbcType=VARCHAR}
+	and device_type=#{device_type,jdbcType=VARCHAR}
+  and  DATE_FORMAT(create_time,'%Y-%m-%d') =curdate()
+
+	) as t group by  t.device_type,t.create_time
+
+</select>
+<!--    用户+测试类型总测试次数-->
+
+    <select id="queryAllAmount"    resultType="long">
+select count(1)
+ from (
+ select  distinct user_id,user_rel_id,device_type,create_time from hm_measure_info
+
+
+             where
+
+                user_id =#{loginUser_id,jdbcType=VARCHAR}
+                and user_rel_id =#{userSetId,jdbcType=VARCHAR}
+
+		<if test="startDate != null">
+                and DATE_FORMAT(create_time,'%Y-%m-%d') &gt;=  #{startDate,jdbcType=VARCHAR}
+		</if>
+		<if test="endDate != null">
+                and DATE_FORMAT(create_time,'%Y-%m-%d') &lt;#{endDate,jdbcType=VARCHAR}
+		</if>
+		<if test="device_type != null">
+			and  device_type = #{device_type,jdbcType=VARCHAR}
+		</if>
+ ) as t
+    </select>
+<!--   血压测试明细折线图数据-->
+    <select id="queryBpMeasureDetail"    resultType="java.util.HashMap">
+       	select  DATE_FORMAT(t.create_time,'%m/%d') short_date,
+						   t.create_time,
+						     t.m_value  as svalue_value,
+									 case
+								 when   t1.measure_type='Dvalue' then
+								   t1.m_value
+
+									 else
+									 '0'
+									 end dvalue_value,
+									 case
+						    when    t2.measure_type='Pvalue' then
+								   t2.m_value
+									 else
+									 '0'
+									 end pvalue_value
+							from (select user_id,user_rel_id,create_time,device_type,m_value,measure_type from hm_measure_info where measure_type='Svalue'    ) t
+						left join hm_measure_info   t1
+						  on  t.user_id =t1.user_id
+							and t.user_rel_id =t1.user_rel_id
+							and t.create_time = t1.create_time
+							and t.device_type =t1.device_type
+							and t1.measure_type='Dvalue'
+							left join hm_measure_info   t2
+						  on  t.user_id =t2.user_id
+							and t.user_rel_id =t2.user_rel_id
+							and t.create_time = t2.create_time
+							and t.device_type =t2.device_type
+							and  t2.measure_type='Pvalue'
+						 where t.device_type='BPM'
+						 and
+                      t.user_id =#{loginUser_id,jdbcType=VARCHAR}
+                and t.user_rel_id =#{userSetId,jdbcType=VARCHAR}
+
+                and DATE_FORMAT(t.create_time,'%Y-%m-%d') &gt;=  #{startDate,jdbcType=VARCHAR}
+                and DATE_FORMAT(t.create_time,'%Y-%m-%d') &lt;#{endDate,jdbcType=VARCHAR}
+
+            order by t.create_time asc limit 12
+
+
+    </select>
+<!--    血糖测量-->
+    <select id="queryGluMeasureDetail"    resultType="java.util.HashMap">
+    						select  DATE_FORMAT(t.create_time,'%m/%d') short_date,
+						     t.create_time,
+						 case
+						    when   t.measure_type='A' then
+								   t.m_value
+								 when   t1.measure_type='A' then
+								   t1.m_value
+
+									 else
+									 '0'
+									 end a_value,
+									 case
+						    when   t.measure_type='B' then
+								   t.m_value
+								 when   t1.measure_type='B' then
+								   t1.m_value
+
+									 else
+									 '0'
+									 end b_value
+
+							from (select user_id,user_rel_id,create_time,device_type,m_value,measure_type  from hm_measure_info ) t
+						left join hm_measure_info   t1
+						  on  t.user_id =t1.user_id
+							and t.user_rel_id =t1.user_rel_id
+							and t.create_time = t1.create_time
+							and t.device_type =t1.device_type
+
+						 where t.device_type='GLU'  -- BPM 血压 GLU 血糖 -- TEMP 体温  -- BPM 血压 GLU 血糖 -- TEMP 体温
+             and t.user_id =#{loginUser_id,jdbcType=VARCHAR}
+                and t.user_rel_id =#{userSetId,jdbcType=VARCHAR}
+
+                and DATE_FORMAT(t.create_time,'%Y-%m-%d') &gt;=  #{startDate,jdbcType=VARCHAR}
+                and DATE_FORMAT(t.create_time,'%Y-%m-%d') &lt;#{endDate,jdbcType=VARCHAR}
+              order by t.create_time asc limit 12
+
+    </select>
+    <select id="queryTempMeasureDetail"    resultType="java.util.HashMap">
+    						select  DATE_FORMAT(t.create_time,'%m/%d') short_date,
+						     t.create_time,
+								   t.m_value  as t_value
+							from   hm_measure_info   t
+						 where t.device_type='TEMP'  -- BPM 血压 GLU 血糖 -- TEMP 体温  -- BPM 血压 GLU 血糖 -- TEMP 体温
+             and t.user_id =#{loginUser_id,jdbcType=VARCHAR}
+                and t.user_rel_id =#{userSetId,jdbcType=VARCHAR}
+
+                and DATE_FORMAT(t.create_time,'%Y-%m-%d') &gt;=  #{startDate,jdbcType=VARCHAR}
+                and DATE_FORMAT(t.create_time,'%Y-%m-%d') &lt;#{endDate,jdbcType=VARCHAR}
+              order by t.create_time asc limit 12
+
+    </select>
+</mapper>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/kkpyqt/AndroidStudioProjects/fastble_wehand_demo/app/build/intermediates/res/merged/debug/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/kkpyqt/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7e9ab17e630b48ea3e916b7a1cc12f4e/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    }
+]
